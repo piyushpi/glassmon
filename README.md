@@ -4,21 +4,31 @@ Minimal translucent hardware monitor widget for Linux. Shows CPU/GPU temperature
 
 ![glassmon screenshot](screenshot.png)
 
-## Build
+## For users (no build needed)
+
+1. Download the latest release: [releases page](https://github.com/piyushpi/glassmon/releases).
+2. Extract and run:
+```bash
+tar -xzf glassmon-linux-x86_64.tar.gz
+./glassmon
+```
+Requires Qt6 runtime installed.
+
+Right-click the widget to toggle always-on-top or exit. Autostart can be set up with `./install.sh` if you cloned the repo.
+
+## Build from source
 
 Requires CMake 3.16+, Qt 6, and a C++20 compiler.
 
 ```bash
 ./build.sh
-```
-
-## Run
-
-```bash
 ./build/glassmon
 ```
 
-Right-click the widget to toggle always-on-top or exit. To install and enable autostart, run `./install.sh`.
+To install and enable autostart:
+```bash
+./install.sh
+```
 
 ## License
 
